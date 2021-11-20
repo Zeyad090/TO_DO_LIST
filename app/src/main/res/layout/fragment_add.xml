@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".AddFragment">
+
+<data>
+    <variable
+        name="viewModel"
+        type="com.example.todolist.model.ListViewModel" />
+    <variable
+        name="addFragment"
+        type="com.example.todolist.AddFragment" />
+</data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/for_me">
+
+
+        <Button
+            android:id="@+id/AddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="ADD IN THE LIST"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputadd" />
+
+        <EditText
+            android:id="@+id/inputadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="92dp"
+            android:ems="10"
+            android:fontFamily="@font/abril_fatface"
+            android:hint="Enter To Add"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#FAF8F8"
+            android:textColorHighlight="#D3CFCF"
+            android:textColorHint="#F4F2F2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AddButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

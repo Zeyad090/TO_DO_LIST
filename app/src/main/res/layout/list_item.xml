@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+
+    android:background="@drawable/for_me">
+
+    <TextView
+        android:id="@+id/item_titel"
+        android:layout_width="105dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/abril_fatface"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/details"
+        android:layout_width="120dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="more details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="87dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="144dp"
+        android:fontFamily="@font/abril_fatface"
+        android:minHeight="48dp"
+        android:text="click"
+        android:textColor="#FAF6F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_titel" />
+
+    <Button
+        android:id="@+id/Editbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="108dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/item_titel" />
+
+    <Button
+        android:id="@+id/delet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="remove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details" />
+
+    <TextView
+        android:id="@+id/ShowDeltels"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="ShowDetels"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

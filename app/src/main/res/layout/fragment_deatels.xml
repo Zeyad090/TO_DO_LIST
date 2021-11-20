@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DeatelsFragment">
+<data>
+    <variable
+        name="viewModel"
+        type="com.example.todolist.model.ListViewModel" />
+    <variable
+        name="deatelsFragment"
+        type="com.example.todolist.DeatelsFragment" />
+</data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/for_me">
+
+        <TextView
+            android:id="@+id/Daetel"
+            android:layout_width="256dp"
+            android:layout_height="381dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text=""
+            android:textColor="#1C1B1B"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.642" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
